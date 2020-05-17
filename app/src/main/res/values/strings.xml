@@ -3,9 +3,9 @@
     <string name="title_activity_request">RequestActivity</string>
 
     <string-array name="city_arrays">
-        <item>Cairo</item>
-        <item>Alexandria</item>
-        <item>Mansoura</item>
+        <item>Bani Ebeid</item>
+<!--        <item>Alexandria</item>-->
+<!--        <item>Mansoura</item>-->
 
     </string-array>
 
