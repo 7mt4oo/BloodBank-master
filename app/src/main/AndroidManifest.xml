@@ -3,16 +3,18 @@
     package="com.ideabox.bloodbank">
 
     <uses-permission android:name="android.permision.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/donation"
         android:label="@string/app_name"
+
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,16 +25,16 @@
             android:name=".RequestActivity"
             android:label="@string/title_activity_request"
             android:theme="@style/AppTheme"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".DonateActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="fullSensor"/>
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:name=".DonerListActivity" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:name=".DetailActivity"></activity>
     </application>
 

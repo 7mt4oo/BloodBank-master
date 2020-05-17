@@ -87,6 +87,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:ems="10"
+                android:supportsRtl="true"
                 android:id="@+id/editText_phone"
                 android:hint="@string/Phone"
                 android:layout_marginTop="5dp" />
@@ -97,7 +98,7 @@
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/editText_address"
-                android:hint="Address"
+                android:hint="@string/Address"
                 android:layout_marginTop="5dp" />
 
             <LinearLayout
@@ -151,7 +152,7 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Area :"
+                    android:text="@string/Area"
                     android:layout_gravity="center_vertical" />
 
                 <Spinner

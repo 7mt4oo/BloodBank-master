@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">بنك الدم</string>
-    <string name="title_activity_request">RequestActivity</string>
     <string name="RegisterDonner">تسجيل متبرع</string>
     <string name="RequestBlood">طلب الدم</string>
     <string name="FullName">الاسم كامل</string>
     <string name="Age">السن</string>
-    <string name="Phone">رقم التليفون</string>
     <string name="Address">العنوان</string>
     <string name="BloodGroup">فصيلة الدم :</string>
     <string name="City">مدينة :</string>
@@ -15,10 +13,7 @@
     <string name="SubmitRequest">تقديم الطلب</string>
     <string name="EmergencyBloodRequired">طلب الدم في حالات الطوارئ</string>
     <string name="Addressr">العنوان :</string>
-
-
-
-
-
+    <string name="BaniEbeid">ابني عبيد</string>
+    <string name="Phone">رقم الهاتف</string>
 
 </resources>
