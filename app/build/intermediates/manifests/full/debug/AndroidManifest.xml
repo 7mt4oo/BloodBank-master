@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ideabox.bloodbank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permision.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/donation"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ideabox.bloodbank.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ideabox.bloodbank.RequestActivity"
+            android:label="@string/title_activity_request"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.ideabox.bloodbank.DonateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ideabox.bloodbank.DonerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ideabox.bloodbank.DetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
