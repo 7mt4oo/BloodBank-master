@@ -30,6 +30,9 @@ public final class R {
          */
         public static final int BaniEbaid=0x7f0b0000;
         public static final int bg_arrays=0x7f0b0001;
+        /**         <item>Alexandria</item>
+        <item>Mansoura</item>
+         */
         public static final int city_arrays=0x7f0b0002;
     }
     public static final class attr {

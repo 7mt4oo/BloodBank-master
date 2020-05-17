@@ -60,7 +60,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Blood Group :"
+            android:text="@string/BloodGroup"
             android:layout_gravity="center_vertical" />
 
         <Spinner
@@ -84,7 +84,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="City :"
+            android:text="@string/City"
             android:layout_gravity="center_vertical" />
 
         <Spinner
@@ -99,7 +99,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit Request"
+        android:text="@string/SubmitRequest"
         android:id="@+id/submit"
         android:layout_below="@+id/linearLayout4"
         android:layout_marginTop="30dp"

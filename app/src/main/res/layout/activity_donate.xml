@@ -52,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Register"
+                android:text="@string/Register"
                 android:id="@+id/textView2"
                 android:layout_centerHorizontal="true"
                 android:textAlignment="center"
@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Full Name"
+                android:hint="@string/FullName"
                 android:ems="10"
                 android:id="@+id/editText_name"
                 android:layout_marginTop="5dp"
@@ -75,11 +75,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+                android:inputType="number"
                 android:ems="10"
                 android:id="@+id/editText_email"
                 android:layout_gravity="center_horizontal"
-                android:hint="E-mail"
+                android:hint="@string/Age"
                 android:layout_marginTop="5dp" />
 
             <EditText
@@ -88,7 +88,7 @@
                 android:inputType="phone"
                 android:ems="10"
                 android:id="@+id/editText_phone"
-                android:hint="Phone"
+                android:hint="@string/Phone"
                 android:layout_marginTop="5dp" />
 
             <EditText
@@ -109,7 +109,7 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Blood Group :"
+                    android:text="@string/BloodGroup"
                     android:layout_gravity="center_vertical" />
 
                 <Spinner
@@ -130,7 +130,7 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="City :"
+                    android:text="@string/City"
                     android:layout_gravity="center_vertical" />
 
                 <Spinner
@@ -168,7 +168,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="@string/Register"
                 android:background="@color/colorPrimary"
                 android:textColor="@color/colorWhite"
                 android:layout_marginTop="20dp"

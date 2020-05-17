@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import es.dmoral.toasty.Toasty;
+
 public class DonateActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     String TAG = "DonateActivity";
@@ -27,7 +29,7 @@ public class DonateActivity extends AppCompatActivity implements AdapterView.OnI
 
         Blood_List = ArrayAdapter.createFromResource(this,R.array.bg_arrays, android.R.layout.select_dialog_item);
         City_List = ArrayAdapter.createFromResource(this,R.array.city_arrays, android.R.layout.select_dialog_item);
-        Area_List = ArrayAdapter.createFromResource(this, R.array.BaniEbaid, android.R.layout.select_dialog_item);
+        Area_List = ArrayAdapter.createFromResource(this, R.array.area, android.R.layout.select_dialog_item);
 
         Spinner spinner_blood = (Spinner)findViewById(R.id.spinner_bloodgrp);
         Spinner spinner_city = (Spinner)findViewById(R.id.spinner_city);
@@ -56,9 +58,9 @@ public class DonateActivity extends AppCompatActivity implements AdapterView.OnI
 
         int aid = 0;
 
-        if(city.equals("BaniEbaid"))
+        if(city.equals("BaniEbeid"))
         {
-            aid = R.array.BaniEbaid;
+            aid = R.array.area;
         }
 //        else if(city.equals("Alexandria"))
 //        {
@@ -95,25 +97,34 @@ public class DonateActivity extends AppCompatActivity implements AdapterView.OnI
         if(donerData.full_name.isEmpty() || donerData.phone.isEmpty() || donerData.email.isEmpty() ||  donerData.addr.isEmpty())
         {
             msg = "One or Multiple fields are Empty.\nCheck all Fields and try Again.";
-            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+//            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+            Toasty.error(this, msg, Toast.LENGTH_SHORT, true).show();
+
         }
-        else if(!Patterns.EMAIL_ADDRESS.matcher( donerData.email).matches())
+        else if( donerData.email.isEmpty())
         {
-            msg = "Invalid E-mail address.";
-            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+
+//            msg = "Invalid Age.";
+//            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+            Toasty.error(this, "Invalid Age.", Toast.LENGTH_SHORT, true).show();
+
         }
         else if( donerData.phone.length()<10)
         {
-            msg = "Invalid Phone number.";
-            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+//            msg = "Invalid Phone number.";
+//            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+            Toasty.error(this, "Invalid Phone number.", Toast.LENGTH_SHORT, true).show();
+
         }
         else
         {
             // Save data in db
 
             dbHelper.insert(donerData, this);
-            msg = "Successfully, registered as Doner.";
-            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+//            msg = "Successfully, registered as Doner.";
+            Toasty.success(this, "Successfully, registered as Donner.", Toast.LENGTH_SHORT, true).show();
+
+//            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
             super.onBackPressed();
         }
 

@@ -29,30 +29,31 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toRightOf="@+id/imageView3"
-            android:layout_toEndOf="@+id/imageView3"
-            android:layout_alignParentBottom="true"
+            android:layout_height="match_parent"
             android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginLeft="20dp"
-            android:gravity="center_vertical">
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="John Snow"
-            android:id="@+id/name"
-            android:textColor="@color/colorPrimaryDark"/>
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Snow"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryDark" />
 
 
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Indore, Airport"
-            android:id="@+id/location"/>
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indore, Airport"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
         </LinearLayout>
     </RelativeLayout>
